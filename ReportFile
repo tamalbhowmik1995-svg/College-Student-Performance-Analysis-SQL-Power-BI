@@ -1,0 +1,50 @@
+A "report file" typically refers to an export or summary of the findings derived from your visualization tool (Power BI, in this case). This file summarizes the insights you gained from analyzing the data across the college, student, edtech, and performance tables.
+Here is a template for a formal project report you can use, formatted in Markdown (like a sophisticated summary document or an extended README section).
+Project Report: Analysis of Student Performance and EdTech Engagement
+Project Duration: [Start Date] – [End Date]
+Author(s): [Your Name(s)]
+Version: 1.0
+Table of Contents
+Executive Summary
+Introduction & Objectives
+Methodology
+Key Findings & Insights
+Recommendations
+Limitations
+1. Executive Summary
+This report details an in-depth analysis of student academic performance across various colleges, incorporating student demographics and engagement metrics with educational technology (EdTech) platforms. The project utilized SQL for data preparation and transformation, and Power BI to create an interactive, data-driven dashboard.
+The primary finding highlights a strong positive correlation between frequent EdTech interaction (measured by login frequency and course completion rates) and higher GPA scores. We identified specific student demographics that are less engaged with the platforms, indicating targeted intervention opportunities.
+2. Introduction & Objectives
+Educational institutions are increasingly relying on digital platforms. Understanding how these tools impact traditional performance metrics is crucial.
+Objectives:
+To consolidate data from four distinct sources (college, student, edtech, performance) into a unified data model.
+To quantify the relationship between EdTech usage patterns and academic outcomes.
+To visualize complex data trends to provide administrators with clear, actionable insights.
+3. Methodology
+3.1. Data Preparation (SQL)
+The initial phase involved data ingestion and cleaning using SQL.
+Data Joins: The four tables were linked primarily using student_id and college_id keys to create a holistic view of each student.
+Feature Engineering: New metrics were calculated, such as "Engagement Score" (a composite of login frequency and assignment submission rates) and "Performance Delta" (difference between expected GPA and actual GPA).
+Tool Used: [Specify your SQL environment, e.g., MySQL]
+3.2. Data Visualization & Analysis (Power BI)
+The cleaned dataset was imported into Power BI to build a relational data model and develop a multi-page interactive dashboard.
+Key Visuals: Dashboards included scatter plots (GPA vs. Engagement Score), bar charts (Performance by College Type), and slicers for demographic filtering (Age, Gender, Major).
+Tool Used: Power BI Desktop
+4. Key Findings & Insights
+The Power BI dashboard revealed several significant patterns:
+4.1. The Engagement-Performance Link
+There is a clear positive correlation (R-squared = 0.72) between high EdTech engagement scores and achieving a GPA of 3.5 or higher. Students logging in more than 4 times per week consistently outperformed their less-frequent peers.
+4.2. Demographic Disparities
+Major Impact: Students in STEM majors showed the highest average engagement scores, while Arts & Humanities majors showed lower, but more consistent, engagement.
+Age Gaps: Students aged 18-21 utilize mobile EdTech platforms more frequently, whereas students over 25 prefer desktop interfaces.
+4.3. Institutional Variances
+Colleges classified as "Large State Universities" demonstrated bottlenecks in platform support response times, which correlated slightly with a dip in Q3 student performance metrics within those institutions.
+(If you have a static image of your dashboard, you could insert it here:)
+5. Recommendations
+Based on the analysis, we recommend the following strategic actions:
+Gamification Implementation: Introduce gamification elements within the EdTech platform for Arts & Humanities majors to boost initial engagement rates.
+Optimize Mobile Experience: Focus UI/UX improvements on the mobile version of the platform to better serve the 18-21 age demographic.
+Targeted Support: Large State Universities should review and optimize their IT support response workflows for the EdTech platform during peak academic periods.
+6. Limitations
+The current dataset is cross-sectional and does not capture long-term behavioral changes over multiple academic years.
+Performance metrics are limited to GPA and exam scores and do not account for qualitative learning outcomes.
